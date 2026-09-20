@@ -146,7 +146,7 @@ print(f"5>4的结果是:{new}")
 #if语句的基本格式和使用
 """
 age=19
-if age >=18:#判断语句if后面的结果一定要是布尔类型！！！
+if age >=18:#判断语句if后面的结果一定要是布尔类型
     print("恭喜你,成年了")
 else:
     print("未成年人不准入内")
@@ -167,7 +167,7 @@ if int(height)>=120:
     print("您的身高超出120cm,请购票")
 else:
     print("祝您游玩愉快！！！")
-"""
+
 print("欢迎来到黑马动物园！！！")
 height=input("你的身高是多少?(cm)")
 vip_leve=input("您的会员级别是多少?")
@@ -177,3 +177,58 @@ elif int(vip_leve)>=3:
     print("欢迎入内")
 else:
     print("请额外补钱")
+number=5
+number1=input("猜想一个数字")
+if int(number1)==number:
+    print("恭喜你,第一次就猜对了")
+elif int(input("猜错了，再次猜想一个数字"))==number:
+    print("猜对了,真棒!")
+else:
+    print(f"最终数字为{number},又猜错了")
+
+print("欢迎来到黑马动物园")
+if int(input("你的身高是多少？"))>=120:
+    print("不好意思,你的身高大于120cm,不可以免费进入")
+    print("如果你的会员级别达到了3以上那可以免费进入")
+    if int(input("您的会员级别是多少?"))>=4:
+        print("欢迎你的进入")
+    else:
+        print("请补票10元")
+else:
+    print("欢迎进入,小朋友")
+
+print("公司要发礼物啦!!!")
+if 18<=int(input("你的年龄是多少？"))<30:
+    print("恭喜你,年龄条件符合!!!")
+    if int(input("你的入职时间是多久???"))>2:
+        print("恭喜你,可以领取奖品!!!")
+    elif int(input("不好意思,那么请问你的级别是多少呢?"))>3:
+        print("恭喜你,可以领取到奖品!!!")
+else:
+    print("不好意思,你的年龄没达到要求,不可以领取奖品")
+"""
+import random
+num = random.randint(1,10)
+guss_num=input("1到10,猜测一个数字吧")
+if int(guss_num)==num:
+    print("恭喜你,猜中了！！！")
+else:
+    if int(input("不对，再输入一次吧"))>num:
+        print("不好意思,你的数字猜大了")
+    else:
+        print("不好意思,你的数字猜小了")
+guss_num=input("不对，再猜一个数字吧")
+if int(guss_num)==random:
+    print("恭喜猜中了")
+else:
+    if int(guss_num)<num:
+        print("猜小了")
+    else:
+        print("猜大了")
+guss_num=input("不对，再猜一次")
+if int(guss_num)==num:
+    print("恭喜你,猜中啦")
+else:
+    print("你运气也太差了,回家种田吧")
+#今天是2026年，9月20日，11点07分，今日python结束，明天将开始学习while
+    
