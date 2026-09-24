@@ -1,0 +1,10 @@
+#list
+new=["itheima",555,True]
+print(new)
+print(type(new))
+print(new[2])
+print(new[-1])
+new_list=[[1,2,3,"hhhh"],[False,44,"你好"],49,100]
+print(new_list[0][-1])
+new_list[0][-1]="修改成功"
+print(new_list[0][-1])
